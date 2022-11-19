@@ -23,11 +23,25 @@ list.innerHTML += html
 form.addEventListener('submit', e =>{
     e.preventDefault();
     const inputValue = form.add.value.trim();
-    form.reset();
+    form.add.value = '';
     // we are going to do some validations includes not adding an empty activity
     // also not exceeding a given length
     if(inputValue.length){
         addHtml(inputValue)
     }
    
-})
+});
+
+// delete todo with call back function
+
+list.addEventListener('click', (e) =>{
+
+    // we are going  to check if the item clicked is a trash can
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+    }
+// what we did above we targeted the ul(list) container
+// then we checked to see if it contains class called delete
+// after that we then targeted the parent or container of that element which has class of delete.
+// then we added remove method to delete the element.
+});
