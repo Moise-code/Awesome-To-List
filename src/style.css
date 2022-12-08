@@ -1,31 +1,38 @@
 
-body{
-    background: #352f5a;
+body {
+  background: #352f5a;
 }
-.container{
-    max-width: 400px;
+
+.container {
+  max-width: 400px;
 }
+
 input[type=text],
-input[type=text]:focus{
-    color: #fff;
-    border: none;
-    background: rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+input[type=text]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
 }
-.todos li{
-    background: #423a6f;
+
+.todos li {
+  background: #423a6f;
 }
-.delete{
-    cursor:pointer;
+
+.delete {
+  cursor: pointer;
 }
-.add-new{
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+.add-new {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-label{
-    text-align: center;
+
+label {
+  text-align: center;
 }
-.filtered{
-    display: none !important;
+
+.filtered {
+  display: none !important;
 }
