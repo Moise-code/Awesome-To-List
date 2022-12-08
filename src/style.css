@@ -26,3 +26,6 @@ input[type=text]:focus{
 label{
     text-align: center;
 }
+.filtered{
+    display: none !important;
+}
