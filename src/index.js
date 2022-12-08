@@ -54,3 +54,7 @@ list.addEventListener('click', (e) =>{
 
 // then lets target the checkbox and one clicked the delete button will work and put under line 
 
+// we are going to do the search method by using filter to find the filtered element//
+
+
+ 
