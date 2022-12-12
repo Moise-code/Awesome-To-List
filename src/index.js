@@ -78,11 +78,10 @@ const filterTodos = (term) => {
 };
 
 
-
-
+ 
 // what we did here we just targeted added the event listerner to the input
 search.addEventListener('keyup', () =>{
-    const term = search.value.trim();
+    const term = search.value.trim().toLowerCase();
     filterTodos(term);
 } )
 
