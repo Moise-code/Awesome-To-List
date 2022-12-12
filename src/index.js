@@ -24,7 +24,6 @@ list.innerHTML += html
 
 }
 
-
 // first of all we are adding the eventlisterner submit to the form so that it gets the value of in put and call the function which will append the text to UI
 
 form.addEventListener('submit', e =>{
@@ -46,7 +45,7 @@ list.addEventListener('click', (e) =>{
     // we are going  to check if the item clicked is a trash can
     if(e.target.classList.contains('delete')){
         e.target.parentElement.remove();
-    }x
+    }
 // what we did above we targeted the ul(list) container
 // then we checked to see if it contains class called delete
 // after that we then targeted the parent or container of that element which has class of delete.
