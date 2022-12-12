@@ -2,8 +2,32 @@ import { Alert } from 'bootstrap';
 import './style.css';
 const form = document.querySelector('.add');
 const list = document.querySelector('.list-group')
-const spanning = document.querySelector('.spanning')
 const search = document.querySelector('.search input') 
+const clock = document.querySelector('.clock')
+
+const tickClock = () =>{
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth()
+    const hours = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+    const seconds = currentDate.getSeconds();
+
+    const clockSection = `
+    
+    <span>Date</span> :
+    <span>${year}</span> /
+    <span>${month}</span>
+    <span>Time</span> :
+    <span>${hours}</span> :
+    <span>${minutes}</span> :
+    <span>${seconds}</span>
+    
+    `
+    clock.innerHTML = clockSection;
+
+}
+setInterval(tickClock, 1000);
 
 
 // secondly, we are going to create a function which will get the html format of a new todo list and append it to ui

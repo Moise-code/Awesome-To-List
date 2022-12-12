@@ -7,6 +7,16 @@ body {
   max-width: 400px;
 }
 
+.clock{
+  background-color: white;
+  padding: .5rem;
+  color: #352f5a;
+  margin: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: rgb(14, 11, 11) 0px 2px 8px 0px;
+}
 input[type=text],
 input[type=text]:focus {
   color: #fff;
