@@ -60,8 +60,12 @@ form.addEventListener('submit', e =>{
         addHtml(inputValue)
     }
    
+    localStorage.setItem('inputValue', inputValue);
 });
 
+if(localStorage.getItem('inputValue')){
+addHtml(localStorage.getItem('inputValue'));
+}
 // delete todo with call back function
 
 list.addEventListener('click', (e) =>{
